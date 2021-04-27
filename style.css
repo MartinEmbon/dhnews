@@ -113,14 +113,15 @@ footer .iconos {
 }
 
 
-.rotate:hover{    
-    animation: animName 1s linear infinite;
-    transition: 1s ease;
+.rotate {
+    transform: transform 2s;
 }
-@keyframes animName {
- 
+
+.rotate:hover{    
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
    100%{
        transform: rotateY(360deg);
       }
-   }
-   
+    }
